@@ -79,4 +79,5 @@ while 1:
         break
 
 stream.release()
+output.release()
 cv2.destroyAllWindows()
