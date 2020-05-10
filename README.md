@@ -20,7 +20,7 @@
 	To use one of my pre-trained models, please contact me to obtain the API-key 
 	as the Google Cloud service charges per API request.
 
-	Other models to be added later..
+	Other models will be added soon..
 
 ## Super-Hero Detector
 
