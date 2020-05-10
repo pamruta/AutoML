@@ -7,18 +7,18 @@
 
 	Custom Trained Object Detection Model to Detect Famous Cartoon Characters
 
-	Mickey-Mouse.py : Detects cartoon characters in the famous Mickey Mouse show
+	Detect-Cartoon.py : Recognizes cartoon characters in the given video file
 
 	Usage:
 
-		python3 Mickey-Mouse.py [PROJECT_ID] [MODEL_ID]
+		python3 Detect-Cartoon.py VIDEO PROJECT_ID MODEL_ID
 
 	This script takes Auto-ML Project ID and Model ID as input parameters.
 	Once the model is trained and deployed in Google Cloud, simply pass the 
 	project and model IDs to run this script.
 
-	If you like to use any of my pre-trained models, please contact me so 
-	I can provide you the API-key, as Google Cloud service charges per API request.
+	If you like to use any of my pre-trained models deployed on GCP, please contact me
+	so I can provide you the credentials to access APIs..
 
 	Other models will be added soon..
 
