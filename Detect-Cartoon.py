@@ -74,8 +74,8 @@ while 1:
                     cv2.putText(frame, label, (x1, y1-10), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
                 else:
                     # put label inside the box otherwise it won't be visible
-                    cv2.rectangle(frame, (x1, y1+30), (x1+130, y1), (color['R'], color['G'], color['B']), cv2.FILLED)
-                    cv2.putText(frame, label, (x1, y1+10), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
+                    cv2.rectangle(frame, (x1, y1), (x1+130, y1+30), (color['R'], color['G'], color['B']), cv2.FILLED)
+                    cv2.putText(frame, label, (x1, y1+20), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
 
         # display output frame and write to mp4 file
         cv2.imshow('Cartoon-Detector', frame)
