@@ -13,14 +13,12 @@
 
 		python3 Detect-Cartoon.py VIDEO PROJECT_ID MODEL_ID
 
-	This script takes Auto-ML Project ID and Model ID as input parameters.
-	Once the model is trained and deployed in Google Cloud, simply pass the 
-	project and model IDs to run this script.
+	In addition to input video file, this script takes Auto-ML Project ID and Model ID 
+	as input parameters. Once the model is trained and deployed in Google Cloud, simply 
+	pass the corresponding project and model IDs to run this script. 
 
 	If you like to use any of my pre-trained models deployed on GCP, please contact me
 	so I can provide you the credentials to access APIs..
-
-	Other models will be added soon..
 
 ## Super-Hero Detector
 
