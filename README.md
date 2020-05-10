@@ -15,10 +15,10 @@
 
 	This script takes Auto-ML Project ID and Model ID as input parameters.
 	Once the model is trained and deployed in Google Cloud, simply pass the 
-	project and model IDs to run this script, and set your Google Cloud credentials.
+	project and model IDs to run this script.
 
-	To use one of my pre-trained models, please contact me to obtain the API-key 
-	as the Google Cloud service charges per API request.
+	If you like to use any of my pre-trained models, please contact me so 
+	I can provide you the API-key, as Google Cloud service charges per API request.
 
 	Other models will be added soon..
 
