@@ -13,6 +13,13 @@
 
 		python3 Mickey-Model.py [PROJECT_ID] [MODEL_ID]
 
+	This script takes Auto-ML Project ID and Model ID as input parameters.
+	Once the model is trained and deployed in Google Cloud, simply pass the 
+	project and model IDs to run this script, and set your Google Cloud credentials.
+
+	To use one of my pre-trained models, please contact me to obtain the API-key 
+	as the Google Cloud service charges per API request.
+
 	Other models to be added later..
 
 ## Super-Hero Detector
