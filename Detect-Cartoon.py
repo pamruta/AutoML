@@ -69,11 +69,11 @@ while 1:
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (color['R'], color['G'], color['B']), 2)
 
                 if(y1-30 > 0):
-                    # put label on top
+                    # put label on top of the box
                     cv2.rectangle(frame, (x1, y1-30), (x1+130, y1), (color['R'], color['G'], color['B']), cv2.FILLED)
                     cv2.putText(frame, label, (x1, y1-10), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
                 else:
-                    # put label below the box otherwise it won't be visible
+                    # put label inside the box otherwise it won't be visible
                     cv2.rectangle(frame, (x1, y1+30), (x1+130, y1), (color['R'], color['G'], color['B']), cv2.FILLED)
                     cv2.putText(frame, label, (x1, y1+10), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
 
