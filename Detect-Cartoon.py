@@ -5,19 +5,26 @@ import cv2
 from google.cloud import automl_v1beta1
 from google.cloud.automl_v1beta1.proto import service_pb2
 
-# provide Project ID and Model ID to run Auto-ML
-project_id = sys.argv[1]
-model_id = sys.argv[2]
+if len(sys.argv) != 4:
+    print("Usage: Detect-Cartoon.py VIDEO PROJECT_ID MODEL_ID")
+    exit(1)
 
-# detects characters from a given video frame
-def detect_mickey(frame):
+# input video file
+video_file = sys.argv[1]
+
+# project and model ID to run Auto-ML
+project_id = sys.argv[2]
+model_id = sys.argv[3]
+
+# detects cartoon characters in given image
+def detect_cartoon(frame):
     model = automl_v1beta1.PredictionServiceClient()
     path = "projects/" + project_id + "/locations/us-central1/models/" + model_id
     result = model.predict(path, {'image': {'image_bytes': frame}})
     return result
 
-# provide input video to process
-stream = cv2.VideoCapture("sample-videos/mickey-1.mp4")
+# load video
+stream = cv2.VideoCapture(video_file)
 
 # assign color-codes based on class-labels
 color_codes = { 'mickey_mouse': {'R': 0, 'G': 128, 'B': 255},
@@ -28,7 +35,7 @@ color_codes = { 'mickey_mouse': {'R': 0, 'G': 128, 'B': 255},
 codec = cv2.VideoWriter_fourcc('m','p','4','v')
 frame_rate = 15
 # output video file
-output = cv2.VideoWriter('mickey1-output.mp4', codec, frame_rate, (1280,720), True)
+output = cv2.VideoWriter('output.mp4', codec, frame_rate, (1280,720), True)
 
 # process input video frame by frame
 while 1:
@@ -40,7 +47,8 @@ while 1:
         with open('test.png', 'rb') as image_file:
             image_data = image_file.read()
 
-            result = detect_mickey(image_data)
+            # detecting cartoon characters in this frame
+            result = detect_cartoon(image_data)
 
             # parse API response
             for character in result.payload:
@@ -65,12 +73,12 @@ while 1:
                     cv2.rectangle(frame, (x1, y1-30), (x1+130, y1), (color['R'], color['G'], color['B']), cv2.FILLED)
                     cv2.putText(frame, label, (x1, y1-10), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
                 else:
-                    # put label below the box
+                    # put label below the box otherwise it won't be visible
                     cv2.rectangle(frame, (x1, y1+30), (x1+130, y1), (color['R'], color['G'], color['B']), cv2.FILLED)
                     cv2.putText(frame, label, (x1, y1+10), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
 
         # display output frame and write to mp4 file
-        cv2.imshow('Mickey-Mouse', frame)
+        cv2.imshow('Cartoon-Detector', frame)
         output.write(frame)
 
         if cv2.waitKey(1)&0xFF == ord('q'):
