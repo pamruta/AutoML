@@ -17,4 +17,5 @@
 
 ## Super-Hero Detector
 
-	Custom Trained Object Detection Model to Detect Popular Super Heros (like Batman, Super-man, Spider-Man, Captain America etc) in Action and Sci-Fi films..
+	Custom Trained Object Detection Model to Detect Popular Super Heros 
+	(like Batman, Super-man, Spider-Man, Captain America etc) in Action and Sci-Fi films..
