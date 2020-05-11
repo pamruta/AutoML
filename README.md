@@ -11,7 +11,7 @@ Model output tested on famous Mickey Mouse Show
 
 Model output tested on classic Wizard of Oz movie
 
-[coming soon..]
+![Wizard-of-Oz Demo](demos/wizard-of-oz.gif)
 
 Model tested on popular Super Heroes in Action & Sci-Fi films..
 
