@@ -6,7 +6,7 @@ from google.cloud import automl_v1beta1
 from google.cloud.automl_v1beta1.proto import service_pb2
 
 if len(sys.argv) != 4:
-    print("Usage: Detect-Cartoon.py VIDEO PROJECT_ID MODEL_ID")
+    print("Usage: Detect-Character.py VIDEO PROJECT_ID MODEL_ID")
     exit(1)
 
 # input video file
