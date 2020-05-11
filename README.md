@@ -24,10 +24,7 @@ Output of model trained on Classic Movie Wizard of Oz
 		python3 Detect-Character.py VIDEO PROJECT_ID MODEL_ID
 
 	In addition to the input video file, this script takes Auto-ML Project ID and Model ID
-        as input parameters. Once the model is trained and deployed in Google Cloud, simply
-        pass the corresponding project and model IDs to run this script.
-
-	You can reach me at [amruta @ cinematrix.in] to request API credentials.
+        as input parameters. You can reach me at [amruta @ cinematrix.in] to request API credentials.
 
 	Coming soon: Scripts for running offline predictions using TensorFlow.JS / Docker
 
