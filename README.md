@@ -27,8 +27,7 @@ Model trained on Classic Movie Wizard of Oz
         as input parameters. Once the model is trained and deployed in Google Cloud, simply
         pass the corresponding project and model IDs to run this script.
 
-        If you need my help to build a custom model trained for specific movie / tv-show, 
-	you can reach me at [amruta@cinematrix.in]
+	You can reach me at [amruta @ cinematrix.in] to request API credentials.
 
 	Coming soon:  Scripts for running offline predictions using TensorFlow.JS / Docker
 
