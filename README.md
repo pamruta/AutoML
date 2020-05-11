@@ -3,7 +3,7 @@
 
 ## Character Recognition
 
-#### Customized Object Detection Models trained to Detect Famous TV / Movie / Cartoon Characters
+#### Customized Object Detection Models to Detect Famous TV / Movie / Cartoon Characters
 
 Model trained on famous Mickey Mouse Show
 
