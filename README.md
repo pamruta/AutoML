@@ -29,8 +29,8 @@ Model trained on popular Super Heroes in Action & Sci-Fi films..
         as input parameters. Once the model is trained and deployed in Google Cloud, simply
         pass the corresponding project and model IDs to run this script.
 
-        If you like to use any of my pre-trained models deployed on GCP, please contact me
-        to obtain access credentials for APIs..
+        If you need my help to build a custom model trained for specific movie / tv-show, 
+	you can reach me at [amruta@cinematrix.in]
 
 	Coming soon:  Scripts for running offline predictions using TensorFlow.JS / Docker
 
