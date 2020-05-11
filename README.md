@@ -13,13 +13,6 @@ Model trained on Classic Movie Wizard of Oz
 
 ![Wizard-of-Oz Demo](demos/wizard-of-oz.gif)
 
-Model trained on popular Super Heroes in Action & Sci-Fi films..
-
-[demo video coming soon..]
-
-Model trained on Disney Princesses
-
-[demo video coming soon..]
 
 ### Scripts in this directory :
 
