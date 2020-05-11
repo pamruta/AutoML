@@ -1,28 +1,36 @@
 
 # Projects Built in Auto-ML
 
-## Cartoon Detector
+## Character Recognition
 
-![Mickey-Mouse Demo](demos/mickey-mouse.gif)
+	Custom Trained Object Detection Model to Detect Famous TV / Movie / Cartoon Characters
 
-	Custom Trained Object Detection Model to Detect Famous Cartoon Characters
+	Model output tested on famous Mickey Mouse Show
+	![Mickey-Mouse Demo](demos/mickey-mouse.gif)
 
-	Detect-Cartoon.py : Recognizes cartoon characters in the given video file
+	Model output tested on classic Wizard of Oz movie
+
+	[coming soon..]
+
+	Model output tested on Super Heroes (like Batman, Spider-Man, Super-Man, Captain America etc)
+	in popular Action & Sci-Fi films..
+
+	[coming soon..]
+
+Scripts in this directory :
+
+	Detect-Character.py : Recognize popular tv / movie and cartoon characters..
 
 	Usage:
 
-		python3 Detect-Cartoon.py VIDEO PROJECT_ID MODEL_ID
+		python3 Detect-Character.py VIDEO PROJECT_ID MODEL_ID
 
-	In addition to input video file, this script takes Auto-ML Project ID and Model ID 
-	as input parameters. Once the model is trained and deployed in Google Cloud, simply 
-	pass the corresponding project and model IDs to run this script. 
+	In addition to input video file, this script takes Auto-ML Project ID and Model ID
+        as input parameters. Once the model is trained and deployed in Google Cloud, simply
+        pass the corresponding project and model IDs to run this script.
 
-	If you like to use any of my pre-trained models deployed on GCP, please contact me
-	so I can provide you the credentials to access APIs..
+        If you like to use any of my pre-trained models deployed on GCP, please contact me
+        so I can provide you the credentials to access APIs..
 
-## Super-Hero Detector
+	Coming soon:  Scripts for running offline predictions using TensorFlow.JS 
 
-	Custom Trained Object Detection Model to Detect Popular Super Heros 
-	(like Batman, Super-man, Spider-Man, Captain America etc) in Action and Sci-Fi films..
-
-	Coming Soon.. Stay Tuned!
