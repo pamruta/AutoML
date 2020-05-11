@@ -9,7 +9,7 @@ Model output tested on famous Mickey Mouse Show
 
 ![Mickey-Mouse Demo](demos/mickey-mouse.gif)
 
-Model output tested on classic Wizard of Oz movie
+Model output tested on classic movie Wizard of Oz 
 
 ![Wizard-of-Oz Demo](demos/wizard-of-oz.gif)
 
@@ -25,12 +25,12 @@ Model tested on popular Super Heroes in Action & Sci-Fi films..
 
 		python3 Detect-Character.py VIDEO PROJECT_ID MODEL_ID
 	
-	In addition to input video file, this script takes Auto-ML Project ID and Model ID
+	In addition to the input video file, this script takes Auto-ML Project ID and Model ID
         as input parameters. Once the model is trained and deployed in Google Cloud, simply
         pass the corresponding project and model IDs to run this script.
 
         If you like to use any of my pre-trained models deployed on GCP, please contact me
-        so I can provide you the credentials to access APIs..
+        to obtain access credentials for APIs..
 
-	Coming soon:  Scripts for running offline predictions using TensorFlow.JS 
+	Coming soon:  Scripts for running offline predictions using TensorFlow.JS / Docker
 
