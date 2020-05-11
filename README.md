@@ -5,11 +5,11 @@
 
 #### Customized Object Detection Models to Detect Famous TV / Movie / Cartoon Characters
 
-Model trained on famous Mickey Mouse Show
+Output of model trained on famous Mickey Mouse Show
 
 ![Mickey-Mouse Demo](demos/mickey-mouse.gif)
 
-Model trained on Classic Movie Wizard of Oz 
+Output of model trained on Classic Movie Wizard of Oz 
 
 ![Wizard-of-Oz Demo](demos/wizard-of-oz-1.gif)
 
@@ -17,7 +17,7 @@ Model trained on Classic Movie Wizard of Oz
 
 ### Scripts in this directory :
 
-	Detect-Character.py : Recognize popular tv / movie and cartoon characters..
+	Detect-Character.py : Recognize popular tv / movie / cartoon characters..
 
 	Usage:
 
@@ -29,5 +29,5 @@ Model trained on Classic Movie Wizard of Oz
 
 	You can reach me at [amruta @ cinematrix.in] to request API credentials.
 
-	Coming soon:  Scripts for running offline predictions using TensorFlow.JS / Docker
+	Coming soon: Scripts for running offline predictions using TensorFlow.JS / Docker
 
