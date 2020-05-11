@@ -6,7 +6,8 @@
 	Custom Trained Object Detection Model to Detect Famous TV / Movie / Cartoon Characters
 
 	Model output tested on famous Mickey Mouse Show
-	![Mickey-Mouse Demo](demos/mickey-mouse.gif)
+
+![Mickey-Mouse Demo](demos/mickey-mouse.gif)
 
 	Model output tested on classic Wizard of Oz movie
 
