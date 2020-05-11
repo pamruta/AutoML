@@ -29,7 +29,11 @@ stream = cv2.VideoCapture(video_file)
 # assign color-codes based on class-labels
 color_codes = { 'mickey_mouse': {'R': 255, 'G': 128, 'B': 0},
 'donald_duck': {'R': 255, 'G': 102, 'B': 178},
-'goofy': {'R': 153, 'G': 153, 'B': 0}}
+'goofy': {'R': 153, 'G': 153, 'B': 0},
+'Dorothy': {'R': 255, 'G': 128, 'B': 0},
+'ScareCrow': {'R': 255, 'G': 102, 'B': 178},
+'TinMan': {'R': 51, 'G': 153, 'B': 255},
+}
 
 # height and width of output video
 w = 1280
@@ -72,13 +76,15 @@ while 1:
                 # print label and box on frame
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (color['B'], color['G'], color['R']), 2)
 
+                # label width
+                label_width = len(label) * 10;
                 if(y1-30 > 0):
                     # put label on top of the box
-                    cv2.rectangle(frame, (x1, y1-30), (x1+130, y1), (color['B'], color['G'], color['R']), cv2.FILLED)
+                    cv2.rectangle(frame, (x1, y1 - 30), (x1 + label_width, y1), (color['B'], color['G'], color['R']), cv2.FILLED)
                     cv2.putText(frame, label, (x1, y1-10), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
                 else:
                     # put label inside the box otherwise it won't be visible
-                    cv2.rectangle(frame, (x1, y1), (x1+130, y1+30), (color['B'], color['G'], color['R']), cv2.FILLED)
+                    cv2.rectangle(frame, (x1, y1), (x1 + label_width, y1 + 30), (color['B'], color['G'], color['R']), cv2.FILLED)
                     cv2.putText(frame, label, (x1, y1+20), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
 
         # display output frame and write to mp4 file
