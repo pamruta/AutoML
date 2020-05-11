@@ -3,7 +3,7 @@
 
 ## Character Recognition
 
-### Custom Trained Object Detection Model to Detect Famous TV / Movie / Cartoon Characters
+#### Custom Trained Object Detection Model to Detect Famous TV / Movie / Cartoon Characters
 
 Model output tested on famous Mickey Mouse Show
 
@@ -13,8 +13,7 @@ Model output tested on classic Wizard of Oz movie
 
 [coming soon..]
 
-Model output tested on Super Heroes (like Batman, Spider-Man, Super-Man, Captain America etc)
-in popular Action & Sci-Fi films..
+Model tested on popular Super Heroes in Action & Sci-Fi films..
 
 [coming soon..]
 
