@@ -3,7 +3,7 @@
 
 ## Character Recognition
 
-	Custom Trained Object Detection Model to Detect Famous TV / Movie / Cartoon Characters
+	### Custom Trained Object Detection Model to Detect Famous TV / Movie / Cartoon Characters
 
 	Model output tested on famous Mickey Mouse Show
 
@@ -18,7 +18,7 @@
 
 	[coming soon..]
 
-Scripts in this directory :
+## Scripts in this directory :
 
 	Detect-Character.py : Recognize popular tv / movie and cartoon characters..
 
