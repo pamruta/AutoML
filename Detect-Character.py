@@ -16,7 +16,7 @@ video_file = sys.argv[1]
 project_id = sys.argv[2]
 model_id = sys.argv[3]
 
-# detects cartoon characters in given image
+# detects popular tv / movie / cartoon characters in given image
 def detect_character(frame):
     model = automl_v1beta1.PredictionServiceClient()
     path = "projects/" + project_id + "/locations/us-central1/models/" + model_id
@@ -55,7 +55,7 @@ while 1:
         with open('test.png', 'rb') as image_file:
             image_data = image_file.read()
 
-            # detecting cartoon characters in this frame
+            # detecting characters in this frame
             result = detect_character(image_data)
 
             # parse API response
@@ -73,10 +73,10 @@ while 1:
                 # get color code
                 color = color_codes[label]
 
-                # print label and box on frame
+                # draw bounding-box around the character
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (color['B'], color['G'], color['R']), 2)
 
-                # label width
+                # print character name
                 label_width = len(label) * 10;
                 if(y1-30 > 0):
                     # put label on top of the box
