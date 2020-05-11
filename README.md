@@ -15,7 +15,11 @@ Model trained on Classic Movie Wizard of Oz
 
 Model trained on popular Super Heroes in Action & Sci-Fi films..
 
-[coming soon..]
+[demo video coming soon..]
+
+Model trained on Disney Princesses
+
+[demo video coming soon..]
 
 ### Scripts in this directory :
 
@@ -24,7 +28,7 @@ Model trained on popular Super Heroes in Action & Sci-Fi films..
 	Usage:
 
 		python3 Detect-Character.py VIDEO PROJECT_ID MODEL_ID
-	
+
 	In addition to the input video file, this script takes Auto-ML Project ID and Model ID
         as input parameters. Once the model is trained and deployed in Google Cloud, simply
         pass the corresponding project and model IDs to run this script.
