@@ -11,8 +11,9 @@ Model trained on famous Mickey Mouse Show
 
 Model trained on Classic Movie Wizard of Oz 
 
-![Wizard-of-Oz Demo](demos/wizard-of-oz.gif)
+![Wizard-of-Oz Demo](demos/wizard-of-oz-1.gif)
 
+![Wizard-of-Oz Demo](demos/wizard-of-oz-2.gif)
 
 ### Scripts in this directory :
 
